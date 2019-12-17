@@ -9,9 +9,9 @@
 spring:
     # 数据库相关配置
   datasource:
-      url: jdbc:mysql://127.0.0.1:3306/local_demo_1?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false&serverTimezone=Asia/Shanghai
+      url: jdbc:mysql://127.0.0.1:3306/jq?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
       username: root
-      password: 123
+      password: jianx
       driver-class-name: com.mysql.cj.jdbc.Driver
       type: com.alibaba.druid.pool.DruidDataSource
       # 德鲁伊设置
@@ -36,10 +36,13 @@ spring:
       # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
       connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
 
-#logging:
-#    level:
-#        root: debug
+logging:
+    level:
+        top.jianx.coolq.mapper: debug
 
-
+mybatis-plus:
+#    mapper-locations: top.jianx.coolq.mapper
+    configuration:
+        map-underscore-to-camel-case: true #开启驼峰映射
 
 

@@ -1,5 +1,6 @@
 package top.jianx.coolq;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since JDK1.8
  **/
 @SpringBootApplication
+@MapperScan("top.jianx.coolq.mapper")
 public class CoolqApplication {
 
     public static void main(String[] args) {

@@ -2,6 +2,7 @@ package top.jianx.coolq.config;
 
 import com.forte.qqrobot.component.forhttpapi.HttpApplication;
 import com.forte.qqrobot.depend.DependGetter;
+import com.forte.qqrobot.log.QQLogBack;
 import com.forte.qqrobot.sender.MsgSender;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
