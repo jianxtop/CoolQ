@@ -6,12 +6,13 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
 @Accessors(chain = true)
 @TableName("jq_group_auth")
-public class JqGroupAuth {
+public class JqGroupAuth implements Serializable {
     @TableId(type = IdType.AUTO)
     private Long id;
     private String group_no;        //'群号',

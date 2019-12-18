@@ -1,0 +1,21 @@
+[
+  {
+    "key": "sign-in",
+    "data": "@你好!\r\n今天第#{第几个}签到,本次积分：#{integral},总积分：#{allIntegral}\r\n#{emjo1}#{emjo2}"
+  },{
+    "key": "invitation",
+    "data": "感谢你邀请 #{qqName} 加入 #{groupName}\r\n邀请成功系统将奖励您#{integral}积分"
+  },{
+    "key": "be-invited",
+    "data": "#{qqName}#{qq} 邀请了你加入 #{groupName}\r\n大家都期待你的加入呢"
+  },{
+    "key": "outGroup",
+    "data": "#{qqName} 刚刚离开了我们"
+  },{
+    "key": "getOutGroup",
+    "data": "@#{manageName} 踢出了 #{qqName}#{qq}"
+  },{
+    "key": "statistics",
+    "data": "#{groupName} 统计:\r\n管理员：#{manageNum}个，\r\n群成员：#{qqNum}个"
+  }
+]

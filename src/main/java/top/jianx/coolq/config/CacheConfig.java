@@ -1,17 +1,31 @@
 package top.jianx.coolq.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import top.jianx.coolq.service.MsgService;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@Configuration
 public class CacheConfig {
-    private Map<String, String> configMap;
+    private static Map<String, String> cikuChche;
+    @Autowired
+    private MsgService msgService;
     public CacheConfig() {
-        configMap = new HashMap<>();
+        this.cikuChche = new HashMap<>();
+        setCikuCache();
     }
 
+    public static Map<String, String> getLibrary(){
+        return cikuChche;
+    }
+
+    private void setCikuCache() {
+        Map<String, String> map = msgService.getCikuChche("all");
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+
+        }
+    }
 
 
 }

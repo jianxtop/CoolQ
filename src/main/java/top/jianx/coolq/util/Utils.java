@@ -80,8 +80,22 @@ public class Utils {
         return "70687547";
     }
 
+    /**
+     * 生成uuid
+     * @return
+     */
     public String getUUID(){
         return UUID.randomUUID().toString().replace( "-", "" );
+    }
+
+    /**
+     * 截取消息中的at串
+     * @param strMsg
+     * @return
+     */
+    public static String subStringAt(String strMsg, String qqNum){
+        //[CQ:at,qq=1006589597] 简兮
+        return strMsg.substring(strMsg.indexOf("]")+1,strMsg.length()).trim();
     }
 
     public static void main(String[] args) {

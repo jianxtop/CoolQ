@@ -50,6 +50,7 @@ public class SysAddMsgListener {
         msgSender.SETTER.setGroupAddRequestDisagree( groupAddRequest, "????");
     }
 
+    /////?///讨论组创建时候该方法也有响应
     @Listen(MsgGetTypes.groupMemberIncrease)
     public List getGroupMenberList(MsgSender msgSender, GroupCodeAble groupCodeAble) {
         GroupMemberList groupMemberList = msgSender.GETTER.getGroupMemberList(groupCodeAble.getGroupCode());

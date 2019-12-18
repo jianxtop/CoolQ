@@ -15,7 +15,7 @@ import java.io.Serializable;
 @Data
 @Accessors(chain=true)
 public class BaseLibrary  implements Serializable {
-    private String key;
+    private String kkey;
     private String value;
     private String describe;
 }

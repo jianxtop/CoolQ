@@ -22,7 +22,7 @@ import java.util.Date;
 public class CMServiceImpl implements CMService {
     @Autowired(required=true)
     private JqConfigMapper jqConfigMapper;
-    @Autowired
+    @Autowired(required=true)
     private JqGroupAuthMapper jqGroupAuthMapper;
 
 
